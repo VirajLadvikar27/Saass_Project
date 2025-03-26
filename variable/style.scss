@@ -1,0 +1,45 @@
+$primary-color: crimson;
+$primary-color1:white;
+
+nav {
+  background-color: $primary-color;
+  ul {
+    display: flex;
+    justify-content: end;
+
+    li {
+      color: $primary-color1;
+      list-style: none;
+      margin-right: 10px;
+    }
+  }
+}
+
+section {
+  div {
+    &::selection {
+      background-color: $primary-color; /* Background color of the selected text */
+      color: $primary-color1;
+    }
+
+    ul {
+      li {
+        a {
+          color: black; /* Default link color */
+          text-decoration: none;
+          &:active {
+            color: $primary-color; /* Color when the link is clicked */
+          }
+          &:hover {
+            cursor: pointer; /* Change cursor to a pointer on hover */
+            color: blue; /* Optional: Change color on hover for better visibility */
+          }
+          &:focus {
+            color: $primary-color; /* Color when the link is focused */
+            outline: none; /* Optional: Remove outline on focus (be mindful of accessibility) */
+          }
+        }
+      }
+    }
+  }
+}

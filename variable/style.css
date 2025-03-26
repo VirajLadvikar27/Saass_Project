@@ -1,0 +1,33 @@
+nav {
+  background-color: crimson; }
+  nav ul {
+    display: flex;
+    justify-content: end; }
+    nav ul li {
+      color: white;
+      list-style: none;
+      margin-right: 10px; }
+
+section div::selection {
+  background-color: crimson;
+  /* Background color of the selected text */
+  color: white; }
+section div ul li a {
+  color: black;
+  /* Default link color */
+  text-decoration: none; }
+  section div ul li a:active {
+    color: crimson;
+    /* Color when the link is clicked */ }
+  section div ul li a:hover {
+    cursor: pointer;
+    /* Change cursor to a pointer on hover */
+    color: blue;
+    /* Optional: Change color on hover for better visibility */ }
+  section div ul li a:focus {
+    color: crimson;
+    /* Color when the link is focused */
+    outline: none;
+    /* Optional: Remove outline on focus (be mindful of accessibility) */ }
+
+/*# sourceMappingURL=style.css.map */
